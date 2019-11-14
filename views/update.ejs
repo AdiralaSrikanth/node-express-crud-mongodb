@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Update contact</title>
+</head>
+<body>
+    <h1>Update Contact</h1>
+    <form action="/update/<%=contact._id%>?_method=PUT" method="POST">
+        <input type="text" name="name" value="<%=contact.name%>">
+        <input type="email" name="email" value="<%=contact.email%>">
+        <input type="tel" name="mobile" value="<%=contact.mobile%>">
+        <button>Update</button>
+    </form>
+</body>
+</html>
